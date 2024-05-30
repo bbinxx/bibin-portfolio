@@ -22,7 +22,7 @@ html,body{
     "header header header"
     "home home home"
   
-    "portofolio portofolio portofolio"
+    "portfolio portfolio portfolio"
     "contact contact contact"
     "footer footer footer"; 
     }
@@ -53,8 +53,8 @@ html,body{
 }
   
 
-  .portofolio { 
-    grid-area: portofolio;
+  .portfolio { 
+    grid-area: portfolio;
     padding: 30;
     text-align: center;
     
