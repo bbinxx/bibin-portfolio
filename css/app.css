@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&family=Bebas+Neue&family=VT323&display=swap');
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    /* font-family: "VT323", monospace; */
+    font-family: "Bebas Neue", sans-serif;
+    background-color: black;
+    color: white;
+   
+}
+.container {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 100px calc(100vh - 100px) 100vh calc(100vh - 100px) 100px; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header header"
+    "home home home"
+  
+    "portofolio portofolio portofolio"
+    "contact contact contact"
+    "footer footer footer"; 
+    }
+  
+  .header { 
+    grid-area: header;
+    scroll-snap-align: start;
+    font-size: 50;
+    padding-top: 20 ;
+    text-align: center;
+   
+}
+  
+  .home { 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 30;
+    grid-area:home;
+    font-size: 2.9vh;
+    border-style: solid;
+    
+    /* background-color: blue; */
+    
+}
+  
+
+  .portofolio { 
+    grid-area: portofolio;
+    padding: 30;
+    text-align: center;
+    
+    
+
+
+    /* background-color: red; */
+}
+  .stacks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+
+  }
+  .contact { 
+    font-size: 2.9vh;
+    border-style: solid;
+    grid-area: contact;
+    padding: 30;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* background-color: green; */
+}
+  
+  .footer { 
+    font-size: 2.9vh;
+    grid-area: footer;
+    padding: 30;
+
+    /* background-color: orange; */
+ }
+ i{
+  font-size: 15vh;
+  padding: 15;
+ }
+ .title{
+font-size: 50;
+ }
+ .sub-title{
+  font-size: 25;
+}
+  
