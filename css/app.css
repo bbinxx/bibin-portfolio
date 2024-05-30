@@ -88,6 +88,7 @@ html,body{
     font-size: 2.9vh;
     grid-area: footer;
     padding: 30;
+    text-align: center;
 
     /* background-color: orange; */
  }
@@ -111,7 +112,7 @@ a, a:visited, a:hover, a:active {
 @media  (max-width: 624px) {
   body {
     i{
-      font-size: 10vh;
+      font-size: 8vh;
       padding: 15;
      }
 
@@ -124,14 +125,12 @@ a, a:visited, a:hover, a:active {
   left: 0;
   width: 100%;
   height: 100vh; /* Cover entire viewport height */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  background-color: black; /* Semi-transparent black background */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999; /* Ensure loading screen is on top of other elements */
+  font-size: 10vh;
 }
 
-#loading-screen p {
-  color: white;
-  font-size: 2rem;
-}
+

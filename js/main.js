@@ -16,4 +16,21 @@ function loading() {
     loadingScreen.style.display = 'none'; // Hide the loading screen on page load
   };
   
+const homeButton = document.querySelector('.goback');
+const homeSection = document.querySelector('.header');
 
+homeButton.addEventListener('click', function() {
+  homeSection.scrollIntoView({ behavior: "smooth" });
+});
+const element = document.querySelector('.goback');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      //  function 
+    
+    }
+  });
+});
+
+observer.observe(element);
