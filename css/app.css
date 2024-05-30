@@ -10,6 +10,7 @@ html,body{
     font-family: "Bebas Neue", sans-serif;
     background-color: black;
     color: white;
+    scroll-behavior: smooth;
    
 }
 .container {
@@ -115,4 +116,22 @@ a, a:visited, a:hover, a:active {
      }
 
   }
+}
+
+#loading-screen {
+  position: fixed; /* Keep the loading screen on top of the content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Cover entire viewport height */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure loading screen is on top of other elements */
+}
+
+#loading-screen p {
+  color: white;
+  font-size: 2rem;
 }
