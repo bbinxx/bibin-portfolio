@@ -107,7 +107,7 @@ a, a:visited, a:hover, a:active {
   color: white; 
   text-decoration: none;
 }
-@media  (min-width: 393px) {
+@media  (max-width: 624px) {
   body {
     i{
       font-size: 10vh;
