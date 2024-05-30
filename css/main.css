@@ -1,22 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=VT323&display=swap');
 
-body{
-    font-family: "VT323", monospace;
-    font-weight: 400;
-    font-style: normal;
-    /* background-color: #3468C0; */
-    border-color: aquamarine;
-  
-}
-.main{
-    background-color:aqua;
-    border-color: aqua;
-    width: 100%;
+html,body{
+    margin: 0;
+    padding: 0;
     height: 100%;
-   border-radius: 20ox;
-   text-align: center;
-   top: 0;
+    width: 100%;
+    font-family: "VT323", monospace;
+   
 }
-.name{
-    color: #000000;
+.container {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 100px calc(100vh - 100px) 100vh 100vh calc(100vh - 100px) 100px; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header header"
+    "home home home"
+    "about about about"
+    "portofolio portofolio portofolio"
+    "contact contact contact"
+    "footer footer footer"; 
 }
+  
+  .header { 
+    grid-area: header;
+    background-color: white;
+}
+  
+  .home { 
+    grid-area:home;
+    background-color: blue;
+    height: 100vh;
+}
+  
+  .about { 
+    grid-area: about;
+    background-color: blueviolet;
+}
+  
+  .portofolio { 
+    grid-area: portofolio;
+    background-color: red;
+}
+  
+  .contact { 
+    grid-area: contact;
+    background-color: green;
+}
+  
+  .footer { 
+    grid-area: footer;
+    background-color: orange;
+ }
+  
