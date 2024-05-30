@@ -30,7 +30,7 @@ html,body{
   .header { 
     grid-area: header;
     scroll-snap-align: start;
-    font-size: 50;
+    font-size: 7vh;
     padding-top: 20 ;
     text-align: center;
    
@@ -78,9 +78,6 @@ html,body{
     grid-area: contact;
     padding: 30;
     
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 
     /* background-color: green; */
@@ -98,9 +95,15 @@ html,body{
   padding: 15;
  }
  .title{
-font-size: 50;
+  font-size: 7vh;
+
  }
  .sub-title{
-  font-size: 25;
+  font-size: 4vh;
+
 }
-  
+ 
+a, a:visited, a:hover, a:active {
+  color: white; 
+  text-decoration: none;
+}
