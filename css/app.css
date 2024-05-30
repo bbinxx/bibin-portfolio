@@ -107,3 +107,12 @@ a, a:visited, a:hover, a:active {
   color: white; 
   text-decoration: none;
 }
+@media  (max-width: 768px) {
+  body {
+    i{
+      font-size: 10vh;
+      padding: 15;
+     }
+
+  }
+}
