@@ -11,6 +11,7 @@ html,body{
     background-color: black;
     color: white;
     scroll-behavior: smooth;
+    user-zoom: fixed;
    
 }
 .container {
@@ -46,7 +47,7 @@ html,body{
 
     padding: 30;
     grid-area:home;
-    font-size: 2.9vh;
+    font-size: 4vh;
     border-style: solid;
     
     /* background-color: blue; */
