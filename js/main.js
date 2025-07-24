@@ -257,9 +257,8 @@ document.querySelectorAll('.skill-item').forEach(item => {
 });
 
 // Hamburger menu toggle
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    // Add mobile menu functionality here if needed
+document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('active');
 });
 
 // Smooth scroll for buttons
@@ -450,6 +449,33 @@ document.addEventListener('DOMContentLoaded', () => {
         const img = new Image();
         img.src = src;
     });
+    
+    const stats = document.querySelectorAll('.stat-number');
+    const animateStats = () => {
+        stats.forEach(stat => {
+            const count = +stat.getAttribute('data-count');
+            let current = 0;
+            const increment = Math.ceil(count / 50);
+            const update = () => {
+                current += increment;
+                if (current > count) current = count;
+                stat.textContent = current;
+                if (current < count) requestAnimationFrame(update);
+            };
+            update();
+        });
+    };
+    // Trigger animation when stats are in view
+    const aboutStats = document.querySelector('.about-stats');
+    if (aboutStats) {
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                animateStats();
+                observer.disconnect();
+            }
+        }, { threshold: 0.5 });
+        observer.observe(aboutStats);
+    }
 });
 
 // Service Worker Registration (for PWA functionality)
